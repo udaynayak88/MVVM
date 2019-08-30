@@ -1,6 +1,7 @@
 package com.example.myapplication.base
 
 import android.arch.lifecycle.ViewModel
+import com.example.myapplication.ui.login.LoginViewModel
 import com.example.myapplication.injection.component.DaggerViewModelInjector
 import com.example.myapplication.injection.component.ViewModelInjector
 import com.example.myapplication.injection.module.NetworkModule
@@ -22,6 +23,9 @@ abstract class BaseViewModel: ViewModel(){
      */
     private fun inject() {
         when (this) {
+
+//            Dagger
+            is LoginViewModel -> injector.inject(this)
             is PostListViewModel -> injector.inject(this)
         }
     }

@@ -1,5 +1,6 @@
 package com.example.myapplication.injection.component
 
+import com.example.myapplication.ui.login.LoginViewModel
 import com.example.myapplication.injection.module.NetworkModule
 import com.example.myapplication.ui.post.PostListViewModel
 import dagger.Component
@@ -16,6 +17,7 @@ interface ViewModelInjector {
      * @param postListViewModel PostListViewModel in which to inject the dependencies
      */
     fun inject(postListViewModel: PostListViewModel)
+    fun inject(loginViewModel: LoginViewModel)
 
     @Component.Builder
     interface Builder {

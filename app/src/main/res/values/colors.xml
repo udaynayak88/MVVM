@@ -3,4 +3,18 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="login_rect_bg">#4445F7</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <color name="login_bottom_bg">#1b1b25</color>
+
+    <color name="login_forget_text">#6F71FA</color>
+
+    <color name="grey">#D3D3D3</color>
+
+    <color name="appBule">#4445F7</color>
+
+    <color name="signup_bottom">#f8f9fe</color>
 </resources>
